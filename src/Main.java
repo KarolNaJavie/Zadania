@@ -107,13 +107,30 @@ void main() {
         System.out.println("Obwod: " + figura.obliczObwod() + "\n");
     }
 
-
     // Zadanie 3
     //  - Stwórz interfejs Movable (move())
     //  - Stwórz interfejs Speakable (speak())
     //  - Klasa Robot implementuje tylko Movable
     //  - Klasa Human implementuje oba
     //  - W Main wywołaj zachowania w pętli
+    Human adix = new Human();
+    Human karol = new Human();
+    Robot adixtron9000 = new Robot();
+    Robot karoltron9000 = new Robot();
+    List<Speakable> speakers = new ArrayList<>();
+    List<Movable> movers = new ArrayList<>();
+    speakers.add(adix);
+    speakers.add(karol);
+    movers.add(adix);
+    movers.add(adixtron9000);
+    movers.add(karol);
+    movers.add(karoltron9000);
+    for (Speakable speaker : speakers) {
+        System.out.println(speaker.speak());
+    }
+    for (Movable mover : movers) {
+        System.out.println(mover.move());
+    }
 
     // Zadanie 5 (ENUM)
     //  - Program pyta użytkownika o kraj i kwotę brutto
