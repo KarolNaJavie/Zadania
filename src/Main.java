@@ -77,7 +77,7 @@ void main() {
     System.out.println("Najmniejsza liczba: " + najmniejsza(lista));
     System.out.println("Najwieksza liczba: " + najwieksza(lista) + "\n");
 
-    // Zadanie 1
+    // Zadanie 2
     //  - Stwórz interface Figura z metodami:
     //        double obliczPole();
     //        double obliczObwod();
@@ -87,14 +87,14 @@ void main() {
     //        kolor, liczba kątów, pole, obwód
 
 
-    // Zadanie 2
+    // Zadanie 3
     //  - Stwórz interfejs Movable (move())
     //  - Stwórz interfejs Speakable (speak())
     //  - Klasa Robot implementuje tylko Movable
     //  - Klasa Human implementuje oba
     //  - W Main wywołaj zachowania w pętli
 
-    // Zadanie 4 (ENUM)
+    // Zadanie 5 (ENUM)
     //  - Program pyta użytkownika o kraj i kwotę brutto
     //  - Enum Kraj zwraca kwotę netto
     //  - Walidacja kraju ignoruje wielkość liter
