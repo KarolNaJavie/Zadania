@@ -132,11 +132,17 @@ void main() {
         System.out.println(mover.move());
     }
 
-    // Zadanie 5 (ENUM)
+    // Zadanie 4 (ENUM)
     //  - Program pyta użytkownika o kraj i kwotę brutto
     //  - Enum Kraj zwraca kwotę netto
     //  - Walidacja kraju ignoruje wielkość liter
     //  - Zły kraj → komunikat, brak wyjątku dla użytkownika
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("\nPodaj kraj: ");
+    String kraj = scanner.nextLine();
+    System.out.println("Podaj kwote brutto: ");
+    double kwota = scanner.nextDouble();
+    System.out.println("Wybrany kraj: " + kraj + ", wpisana kwota brutto: " + kwota + ", kwota netto wynosi: " + Kraj.netto(kraj, kwota));
 
 
     //usun te ktore robiles i przypomnij mi zeby przerobic klasy abstrakcyjne
