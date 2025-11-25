@@ -86,6 +86,27 @@ void main() {
     //  - W Main utwórz listę figur i wypisz:
     //        kolor, liczba kątów, pole, obwód
 
+    List<Figura> figury = new ArrayList<>();       // musialem dodac w klasach pole bok zeby uniknac uzycia klasy abstrakcyjnej
+    Kwadrat kwadrat1 = new Kwadrat(5, "czarny", 4);
+    Kwadrat kwadrat2 = new Kwadrat(3, "zielony", 4);
+    Kwadrat kwadrat3 = new Kwadrat(5, "niebieski", 4);
+    Prostokat prostokat1 = new Prostokat(5, 4, "niebieski", 4);
+    Prostokat prostokat2 = new Prostokat(6, 2, "fioletowy", 4);
+    Prostokat prostokat3 = new Prostokat(12, 2, "szary", 4);
+    figury.add(kwadrat1);
+    figury.add(kwadrat2);
+    figury.add(kwadrat3);
+    figury.add(prostokat1);
+    figury.add(prostokat2);
+    figury.add(prostokat3);
+    for (Figura figura : figury) {
+        System.out.println(figura);
+        System.out.println("Kolor: " + figura.getKolor());
+        System.out.println("Liczba katow: " + figura.getKaty());
+        System.out.println("Pole: " + figura.obliczPole());
+        System.out.println("Obwod: " + figura.obliczObwod() + "\n");
+    }
+
 
     // Zadanie 3
     //  - Stwórz interfejs Movable (move())
